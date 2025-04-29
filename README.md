@@ -52,7 +52,7 @@ qc.cx(0,1)  # CNOT gate
 
 ## 🏆 Bonus Project: Hybrid Quantum-Classical Neural Network
 
-**File:** [`Quantum_NN.ipynb`](./Quantum_NN.ipynb)
+**File:** [`Quantum_NN.ipynb`](./[Quantum_NN.ipynb](https://github.com/ARSH2001/Quantum/blob/main/HW01-Bonus.ipynb))
 
 ### 🔧 Implements:
 ```python
