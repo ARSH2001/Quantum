@@ -24,8 +24,8 @@ This repository contains:
 Key topics covered:  
 ✅ Quantum state manipulation  
 ✅ Deutsch-Josza algorithm  
-✅ Quantum neural networks  
 ✅ SVM and logistic regression  
+✅ Quantum circuit simulations with Qiskit
 
 ---
 
@@ -55,31 +55,16 @@ qc.cx(0,1)  # CNOT gate
 **File:** [`Quantum_NN.ipynb`](./[Quantum_NN.ipynb](https://github.com/ARSH2001/Quantum/blob/main/HW01-Bonus.ipynb))
 
 ### 🔧 Implements:
-```python
-from qiskit import QuantumCircuit
-from qiskit.circuit import Parameter
-import torch
-
-class QuantumLayer(torch.nn.Module):
-    def __init__(self, n_qubits=2):
-        super().__init__()
-        self.circuit = QuantumCircuit(n_qubits)
-        self.theta = Parameter('θ')
-        # Add parameterized gates
-        self.circuit.ry(self.theta, 0)
-        self.circuit.cx(0, 1)
 ```
 ### 📦 Requirements: 
 ```bash
-  pip install qiskit==0.45.0 pytorch==2.0.1 matplotlib==3.7.0
+  pip install qiskit matplotlib
 ```
-### 🎯 Key Features:
-  - Quantum circuit as a PyTorch layer
-  - Parameterized quantum gates (RY, CNOT)
-  - Gradient-based optimization
 
 ### 🛠 Getting Started
 1. Clone repository:
    ```bash
-   git clone https://github.com/ARSH2001/UT-Quantum-ML.git
-   cd UT-Quantum-ML
+       git clone https://github.com/ARSH2001/Quantum.git
+       cd Quantum
+2. Install dependencies (see Requirements).
+3. Run the Jupyter notebooks (e.g., HW01-Bonus.ipynb) to explore the implementations.
